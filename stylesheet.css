@@ -16,6 +16,7 @@ header{
     justify-content: space-between;
     padding: 33px 9%;
     background: transparent;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .logo{
     font-size: 30px;
@@ -38,7 +39,7 @@ header{
 #menu-icon{
     color: white;
     font-size: 35px;
-    z-index: 1;
+    z-index: 0;
     cursor: pointer;
     display: none; 
 }
@@ -59,4 +60,36 @@ header{
 }
 section{
     padding:0 19%;
+}
+.hero-text h1{
+    font-family: 'Oswald', cursive;
+    font-size: 90px;
+    line-height: 1;
+    color: white;
+    margin: 0 0 45px
+}
+.hero-text p{
+    color: white;
+    font-size: 15px;
+    line-height: 1.9;
+    margin-bottom: 40px;
+}
+.hero-text a{
+    display: inline-block;
+    color: white;
+    background: #269c90;
+    border: 1px solid transparent;
+    padding: 12px 30px;
+    margin-right: 20px;
+    line-height: 1.4;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 3px;
+    text-transform: uppercase;
+    transition: all .55s ease;
+}
+.hero-text a:hover{
+    background: transparent;
+   border: 1px solid white;
+   transform: translateX(2px); 
 }
