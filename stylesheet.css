@@ -111,25 +111,26 @@ section{
     font-size: 35px;
     padding-bottom: 30px;
 }
-.slides-dropdown{
+.dropdown{
     transition: transform 0.3s ease;
     cursor: pointer;
 }
-.slides-dropdown.active {
+.dropdown.active {
     transform: translateX(10px);
 }
-.slides-dropdown .arrow-icon{
+.dropdown .arrow-icon{
     transition: transform 0.3s ease;
 }
-.slides-dropdown.active .arrow-icon{
+.dropdown.active .arrow-icon{
     transform: rotate(90deg);
 }
 .slideshow{
     max-height: 0;
+    width: 1000px;
     overflow: hidden;
     transition: max-height 0.4s ease, padding 0.4s ease;
 }
-.slides-dropdown.active .slideshow{
+.dropdown.active .slideshow{
     max-height: 100%;
     overflow: hidden;
 }
@@ -138,4 +139,23 @@ section{
     color: black;
     font-weight: 750;
     padding-bottom: 10px;
+}
+.frq-text{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 100px;
+    margin-left: -100px;
+}
+.frq-text h1{
+    font-size: 50px;
+    font-weight: 750;
+    padding-bottom: 10px;
+}
+.frq-text p{
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+.frq-text ul{
+    padding-left: 50px;
+    font-size: 35px;
+    padding-bottom: 30px;
 }

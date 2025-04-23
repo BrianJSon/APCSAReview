@@ -29,11 +29,23 @@
                 <p>
                     Practice with the FRQS from previous AP CS A exams
                 </p>
-                
-                <ul class="past-frqs">
-                    <li><a></a></li>
+                <ul class="frqs-list">
+                    <li class ="dropdown" onclick="dropdown(this)">
+                        <i class='bx bx-chevron-right arrow-icon'></i><a>2024 FRQ</a>
+                        <ul>
+                            <a href="frqs/2024/csa_2024_q1.pdf" target="_blank">Question 1</a>
+                            <a href="frqs/2024/csa_2024_q2.pdf" target="_blank">Question 2</a>
+                            <a href="frqs/2024/csa_2024_q3.pdf" target="_blank">Question 3</a>
+                            <a href="frqs/2024/csa_2024_q4.pdf" target="_blank">Question 4</a>
+                        </ul>
                 </ul>
             </div>
        </section>
     </body>
 </html>
+
+<script>
+    function dropdown(icon){
+        icon.classList.toggle("active");
+    }
+</script>
