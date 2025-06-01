@@ -15,13 +15,19 @@ header{
     align-items: center;
     justify-content: space-between;
     padding: 25px 9%;
-    background: transparent;
+    background: linear-gradient(270deg, #ffffff 0%, #c5e7ff 28.53%, #297fff 80%);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#home-header{
+    position: relative;
 }
 .logo{
     font-size: 45px;
     font-weight: 700;
     color: #005ad0;
+}
+#home-logo{
+    color: white;
 }
 .navlist{
     display: flex;
@@ -36,12 +42,16 @@ header{
 .navlist a:hover{
     border-bottom: 2px solid rgb(141, 137, 137);;
 }
+#non-home-nav{
+    background: white;
+}
 .home{
     height: 100%;
     width: 100%;
-    min-height: 100vh;
+    min-height:100vh;
     background: linear-gradient(270deg, #ffffff 0%, #c5e7ff 28.53%, #297fff 80%);
     position: relative;
+    overflow-y: auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
@@ -50,16 +60,22 @@ header{
 .ap-logo{
     position: inherit;
     left: 200px;
+    top: -100px;
 }
 section{
-    padding:0 19%;
+    padding:0 15%;
+    padding-top: 25px;
+}
+.home-text {
+    position: relative;
+    top: -100px;
 }
 .home-text h1{
     font-family: 'Oswald', cursive;
     font-size: 90px;
     line-height: 1;
     color: white;
-    margin: 0 0 45px
+    margin: 0 0  45px
 }
 .home-text p{
     color: white;
@@ -88,9 +104,8 @@ section{
    border: 1px solid white;
    transform: translateX(2px);
 }
-#non-home-nav{
-    background-color: white;
-    padding: 25px 9%;
+.resource{
+    padding-bottom: 50px;
 }
 .resource-text{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -100,10 +115,10 @@ section{
 .resource-text h1{
     font-size: 50px;
     font-weight: 750;
-    padding-bottom: 10px;
 }
 .resource-text p{
     font-size: 20px;
+    padding-top: 10px;
     padding-bottom: 20px;
 }
 .resource-text ul{
@@ -134,30 +149,41 @@ section{
     max-height: 100%;
     overflow: hidden;
 }
-#ced-link{
+.link{
     font-size: 50px;
     color: black;
     font-weight: 750;
     padding-bottom: 10px;
+    padding-bottom: 50px;
 }
-.frq-text{
+.practice-resources{
+    height:100%;
+    width: 100%;
+    min-height: 100vh;
+    padding-bottom: 50px;
+}
+.practice-text{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin-top: 100px;
     margin-left: -100px;
 }
-.frq-text h1{
+.practice-text h1, a{
     font-size: 50px;
     font-weight: 750;
     padding-bottom: 10px;
+    color: black;
 }
-.frq-text p{
+.practice-text p{
     font-size: 20px;
     padding-bottom: 20px;
 }
-.frq-text ul{
+.practice-text ul{
     padding-left: 50px;
     font-size: 35px;
     padding-bottom: 30px;
+}
+.practice-link{
+    color: black;
 }
 .link-wrapper{
     max-height: 0;
@@ -167,5 +193,22 @@ section{
 }
 .dropdown.active .link-wrapper{
     max-height: 100%;
-    color:red;
+}
+footer{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #005ad0;
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#footer-logo{
+    font-size: 45px;
+    font-weight: 700;
+    color: white;
+}
+.footer-text{
+    color: white;
+    font-size: 18px;
 }
